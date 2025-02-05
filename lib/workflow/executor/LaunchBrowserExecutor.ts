@@ -1,5 +1,5 @@
 import { ExecutionEnviornment } from "@/lib/types";
-import puppeteer from "puppeteer";
+import chromium from "chrome-aws-lambda";
 import { LaunchBrowserTask } from "../task/LaunchBrowser";
 
 export async function LaunchBrowserExecutor(
@@ -9,9 +9,11 @@ export async function LaunchBrowserExecutor(
     const websiteUrl = enviornment.getInput("Website Url");
     console.log(websiteUrl);
 
-    const browser = await puppeteer.launch({
-      headless: true, // For dev_testing
-      args: ["--no-sandbox"],
+    const browser = await chromium.puppeteer.launch({
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath,
+      headless: chromium.headless,
     });
     enviornment.log.info("Browser started successfully");
     enviornment.setBrowser(browser);
