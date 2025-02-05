@@ -59,7 +59,7 @@ export const typeWriterWords = [
     className: "text-primary dark:text-primary",
   },
   {
-    text: "Workflows.",
+    text: "Workflows with Scrapix",
   },
 ];
 

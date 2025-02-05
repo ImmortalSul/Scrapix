@@ -1,72 +1,120 @@
-# Scrapix
+# Scrapix: A Customizable Web Scraper
 
-This is a highly customizable web scraper built with Next.js 14, PostgreSQL, Prisma, and React Flow. It enables users to create, manage, and execute complex web scraping workflows with a visual, no-code/low-code interface. The scraper comes with advanced features such as AI-based data extraction
+Scrapix is a highly customizable web scraper that allows users to create, manage, and execute complex web scraping workflows with a visual, no-code/low-code interface. Built with modern tools, Scrapix simplifies web scraping tasks and integrates advanced features like AI-based data extraction. Whether you're automating repetitive tasks or extracting structured data from websites, Scrapix has you covered.
 
-## Screenshots
+---
 
-### ScreenShot 1
+## Tech Stack
 
-![Screenshot 1](https://github.com/user-attachments/assets/07105297-8b67-4419-a92f-ef5ff5a038c6)
+### Frontend
 
-### ScreenShot 2
+- **React**: A JavaScript library for building user interfaces.
+- **Next.js**: A React framework for server-side rendering and static site generation.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **Radix UI**: A set of accessible and unstyled components for building high-quality web interfaces.
+- **Framer Motion**: A library for animations in React.
+- **Embla Carousel**: A library for creating carousels in React.
+- **React Query**: A library for fetching, caching, and updating asynchronous data in React.
+- **Recharts**: A charting library for React.
+- **Sonner**: A library for toast notifications in React.
+- **React Day Picker**: A library for date picking in React.
 
-![Screenshot 2](https://github.com/user-attachments/assets/ecf9c093-d03e-4ee0-bd71-48f1d0b38538)
+### Backend
 
-## Technologies Used
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- **Prisma**: An ORM (Object-Relational Mapping) tool for Node.js and TypeScript.
+- **PostgreSQL**: A relational database management system.
+- **Puppeteer**: A Node library for controlling headless Chrome or Chromium.
+- **Stripe**: A library for handling payments and billing.
+- **OpenAI**: A library for interacting with OpenAI's GPT models.
 
-- Nextjs 14 with server actions
-- React Flow
-- PostgreSQL with Neon DB
-- Puppeteer
-- Prisma
-- [Live Url](https://flowscrape.kartikpawar.dev/)
+### Authentication
 
-## Features
+- **Clerk**: A library for authentication and user management.
 
-- Launch Browser
+### Utilities
 
-  - Initiates a browser instance to begin the web scraping process, enabling interaction with web pages.
+- **Class Variance Authority (CVA)**: A library for managing class names in a type-safe way.
+- **Clsx**: A utility for constructing className strings conditionally.
+- **Tailwind Merge**: A utility for merging Tailwind CSS classes.
+- **Cron Parser**: A library for parsing cron expressions.
+- **Date-fns**: A library for manipulating dates in JavaScript.
+- **Zod**: A TypeScript-first schema declaration and validation library.
 
-- Page to HTML
+### Configuration and Build Tools
 
-  - Extracts the complete HTML content of the current page for detailed analysis and processing.
+- **ESLint**: A tool for identifying and fixing problems in JavaScript code.
+- **PostCSS**: A tool for transforming CSS with JavaScript plugins.
+- **Tailwind CSS**: A utility-first CSS framework.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
 
-- Extract Text from Element
+---
 
-  - Retrieves the text content from a specified HTML element using a given CSS selector.
+## Key Features
 
-- Fill Input
+### Browser Interaction
 
-  - Automatically fills a specified input field with a desired value, emulating user input.
+- **Launch Browser**: Opens a browser instance to begin the web scraping process and interact with web pages.
+- **Navigate to URL**: Directly navigate to a specified URL to scrape or interact with the content on the page.
 
-- Click Element
+### Data Extraction & Manipulation
 
-  - Simulates a click action on a specified HTML element, triggering any associated events or navigation.
+- **Page to HTML**: Capture the complete HTML content of the page for detailed analysis and processing.
+- **Extract Text from Element**: Easily extract text content from a specific HTML element using a CSS selector.
+- **Extract Data via AI**: Leverage AI to intelligently parse HTML content and extract structured data based on a custom prompt, returning results as JSON.
+- **Read JSON**: Retrieve and utilize specific keys or properties from a JSON object within your workflow.
+- **Build JSON**: Add, modify, or create new data within a JSON object, enabling dynamic workflow customization.
 
-- Scroll to Element
+### Automation & Interaction
 
-  - Scrolls to a specified element on the page, emulating user behavior for dynamic content loading.
+- **Fill Input**: Automatically fill input fields with predefined values, simulating user input for forms or search bars.
+- **Click Element**: Simulate click actions on specific HTML elements, enabling navigation or triggering events on the page.
+- **Scroll to Element**: Simulate scrolling to a specified element, useful for pages with infinite scrolling or dynamic content loading.
+- **Wait for Element**: Pause the workflow until a specified element is visible or hidden on the page, ensuring reliable scraping.
 
-- Wait for Element
+### Data Delivery
 
-  - Pauses the workflow until a specified element becomes visible or hidden on the page.
+- **Deliver via Webhook**: Send the scraped data to an external API endpoint via a POST request, enabling seamless integration with other tools and services.
 
-- Extract Data via AI
+---
 
-  - Uses AI to parse HTML content and extract structured data based on a custom prompt, returning JSON output.
+## How to Get Started
 
-- Read JSON
+1. Clone the repository:
 
-  - Reads and retrieves a specific key or property from a JSON object for use in workflows.
+   ```bash
+   git clone https://github.com/immortalsul/scrapix.git
+   ```
 
-- Build JSON
+2. Install dependencies:
 
-  - Adds or updates data within an existing JSON object or creates a new one with the specified properties.
+   ```bash
+   cd scrapix
+   npm install
+   ```
 
-- Deliver via Webhook
+3. Set up your environment variables in `.env` (refer to the example in `.env.example`).
 
-  - Sends the scraped data to an external API endpoint through a POST request for further processing or storage.
+4. Run the app locally:
+   ```bash
+   npm run dev
+   ```
 
-- Navigate to URL
+Visit [http://scarpix.troikahub.tech](http://scrapix.troikahub.tech) to start using Scrapix.
 
-  - Navigates to a specified URL, loading the desired web page for scraping or interaction.
+---
+
+## Contributing
+
+We welcome contributions! If you'd like to improve Scrapix, feel free to fork the repository, create a branch, and submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+```
+
+```

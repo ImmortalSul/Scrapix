@@ -35,7 +35,7 @@ export default function HomeLandingPage() {
             <ChevronRightIcon className="h-4 w-4" />
           </Button>
         </div>
-        <p className="text-sm text-primary">
+        <p className="text-sm text-white">
           New users get 200 credits for free upon first login
         </p>
       </SectionWrapper>
